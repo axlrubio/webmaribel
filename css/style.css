@@ -4,6 +4,81 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header #marca h1{
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
 
+    background-color: #ffd5e7;
+}
+
+header h1{
+    color: rgb(116, 114, 114);
+}
+
+header .resaltado{
+    color: rgb(236, 19, 171);
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li{
+    margin-left: 20px;
+}
+
+header nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(236, 19, 171);
+}
+
+header nav ul li a:hover{
+    color: #000;
+}
+
+
+
+
+
+
+
+
+.cajas{
+    width: 1024px;
+    margin: auto;
+}
+
+#section1 .contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: aqua;
+}
+
+#section1 .caja_producto{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#section1 .caja_producto img{
+    width: 100%;
+}
+
+#section1 .caja_producto p{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 10px 0px;
+    margin-top: 20px;
+    background-color: #000;
+    color: white;
 }

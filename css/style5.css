@@ -10,12 +10,15 @@ body{
     font-family: 'Manjari', sans-serif;
 }
 
+.header{
+    padding: 20px;
+}
+
 .title{
-    padding: 20px 0px;
     text-align: center;
-    background-color: brown;
     text-transform: uppercase;
     font-size: 2.9em;
+    padding-top: 14px;
 }
 
 .container{
@@ -26,7 +29,7 @@ body{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr auto auto;
-    gap: 1.6em;
+    grid-gap: 20px;
 }
 
 .container .header, .container .footer{
@@ -44,6 +47,8 @@ body{
 .container .sidebar{
     grid-column-start: 4;
     grid-column-end: 6;
+    background-color: white;
+    padding: 15px;
 }
 
 .related-post{
@@ -55,9 +60,11 @@ body{
     color: white;
 }
 
-.container>.header, .container>.content, .container>.sidebar, .container>.footer, .container>div {
+.container .content{
+    background-color: white;
+    padding: 15px;
+}
 
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #000000;
+footer{
+    padding: 15px;
 }
